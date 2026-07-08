@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>西双版纳红木企业分布 3D 地图</title>
+    <script type="module" crossorigin src="/assets/index-Bd9Nb7hK.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-reW8Xlfg.css">
+  </head>
+  <body>
+    <main class="app-shell sim-stage">
+      <aside class="hud-panel hud-left" aria-label="数据概览与筛选">
+        <section class="panel-block">
+          <p class="panel-kicker">实时数据总览</p>
+          <section class="stats-grid" id="statsGrid"></section>
+        </section>
+        <section class="panel-block">
+          <p class="panel-kicker">筛选控制台</p>
+          <section class="filters" id="filters"></section>
+        </section>
+        <section class="panel-block reference-block">
+          <p class="panel-kicker">资料影像参考</p>
+          <section class="source-reference" id="sourceReference" aria-label="资料影像参考"></section>
+        </section>
+      </aside>
+      <section class="map-panel tech-frame" aria-label="3D 企业分布地图">
+        <div class="map-toolbar">
+          <div>
+            <p class="eyebrow">Xishuangbanna Hongmu Map</p>
+            <h1>西双版纳红木企业分布 3D 地图</h1>
+          </div>
+          <div class="view-toggle" role="group" aria-label="地图视图">
+            <button class="icon-button active" data-view="prefecture" title="全州视图" aria-label="全州视图">州</button>
+            <button class="icon-button" data-view="jinghong" title="景洪主城区" aria-label="景洪主城区">景</button>
+          </div>
+        </div>
+        <div id="sceneRoot" class="scene-root"></div>
+        <div class="legend" id="legend"></div>
+      </section>
+      <aside class="dashboard hud-panel hud-right" aria-label="数据看板">
+        <section class="panel-block insight-block" id="insightPanel"></section>
+        <section class="record-list" id="recordList"></section>
+      </aside>
+      <section class="detail-panel" id="detailPanel" aria-live="polite"></section>
+    </main>
+  </body>
+</html>
